@@ -16,6 +16,9 @@ declare module "react-native" {
   interface TouchableOpacityProps {
     className?: string;
   }
+  interface StatusBarProps {
+    className?: string;
+  }
 
   declare module "*.png" {
     const value: string;
@@ -54,3 +57,4 @@ declare module "react-native" {
 
   // Add similar declarations for other components as needed
 }
+
