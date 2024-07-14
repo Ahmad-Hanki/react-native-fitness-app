@@ -1,6 +1,7 @@
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { View, Text, SafeAreaView, StatusBar, Image } from "react-native";
 import ImageSlider from "@/components/ImageSlider";
+import BodyParts from "@/components/BodyParts";
 
 const home = () => {
   return (
@@ -29,9 +30,12 @@ const home = () => {
         </View>
       </View>
 
-      {/* image slider  react native snap carousel*/}
       <View>
         <ImageSlider />
+      </View>
+
+      <View className="flex-1">
+        <BodyParts />
       </View>
     </SafeAreaView>
   );

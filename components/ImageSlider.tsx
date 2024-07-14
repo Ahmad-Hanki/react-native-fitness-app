@@ -4,25 +4,23 @@ import Carousel from "react-native-reanimated-carousel";
 
 const ImageCard = ({ item }: any) => {
   return (
-    <>
+    <View>
       <Image source={item} className="w-full h-full" resizeMode="cover" />
-    </>
+    </View>
   );
 };
 
 const ImageSlider = () => {
   const width = Dimensions.get("window").width;
   return (
-    <View >
+    <View className={`h-[200px]`}>
       <Carousel
         loop
         width={width}
         height={width / 2}
-        
         autoPlay={true}
         data={Images}
         scrollAnimationDuration={2000}
-        onSnapToItem={() => console.log("current index:")}
         renderItem={({ item }) => (
           <View className="w-full mx-auto border border-black">
             <ImageCard item={item} />
